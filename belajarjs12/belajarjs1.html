@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+    <h1>Belajar JavaScript</h1>
+
+    <p id="nama"></p>
+    <p id="mahasiswa"></p>
+    <script>
+       let nama = 'yazid';
+        
+       document.getElementById("nama").innerHTML = "nama saya " + nama;
+    //array
+    let nama_mahasiswa = ['yazid','zaki','iqbal','amad','joni'];
+    
+    document.getElementById("mahasiswa").innerHTML = "nama mahasiswa " + nama_mahasiswa[1];
+     console.log("nama mahasiswa ke -0 " + nama_mahasiswa[0])
+
+     // object
+     let mobil = {
+         merk : 'BMW',
+         harga : 1000000,
+         warna : 'kuning',
+         ban : 4,
+         jalan : function(kecepatan = 200){
+             return  kecepatan;
+         },
+         cetakmerk: function(){
+          return this.merk;
+         }
+         ,
+         senkanan: function(){
+             return 'nyalain sen kanan';
+         },
+         belokkanan : function(){
+             return 'belok kanan';
+         }
+     }  
+
+     console.log("merk mobil saya "+ mobil.merk +"harganya "+ mobil.harga);
+     console.log(mobil.harga);
+     console.log("kecepatan mobil sekarang " + mobil.jalan() );
+     console.log(mobil.senkanan());
+
+     console.log(mobil.cetakmerk())
+
+       
+    </script>
+</body>
+</html>

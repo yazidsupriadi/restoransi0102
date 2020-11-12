@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs rupiah</title>
+</head>
+<body>
+    <h1>Kurs Mata uang</h1>
+   
+    <label for="">Nilai Mata Uang</label>
+        <input type="number" id="input_kurs" value=""><br><br>
+
+        <input type="submit" value="dollar" onclick="dollar()">
+        <input type="submit" value="riyal" onclick="riyal()">
+        <input type="submit" value="ringgit" onclick="ringgit()">
+
+        
+    <p id="hasil">hasil :</p>
+    <script>
+        function dollar(){
+        let input_kurs = document.getElementById('input_kurs').value;
+
+        let hasil_kurs = input_kurs * 15000;
+        document.getElementById("hasil").innerHTML = hasil_kurs;
+        }
+
+        function riyal(){
+        let input_kurs = document.getElementById('input_kurs').value;
+        let hasil_kurs = input_kurs * 3500;
+        document.getElementById("hasil").innerHTML = hasil_kurs;
+        }
+
+        
+        function ringgit(){
+        let input_kurs = document.getElementById('input_kurs').value;
+        let hasil_kurs = input_kurs * 500;
+        document.getElementById("hasil").innerHTML = hasil_kurs;
+        }
+    </script>
+</body>
+</html>
